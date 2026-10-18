@@ -3,6 +3,8 @@
 A browser-based 3D model of the University of Toronto St. George campus and its
 surroundings, built from OpenStreetMap data and rendered with Three.js.
 
+**Live:** https://felixjiashengfu.github.io/uoft-digital-twin/
+
 ## What it does
 
 - **Real geometry**: 3,532 building footprints (including 1,310 detailed 3D parts),
@@ -30,6 +32,7 @@ tools/build.py       inline the dataset into the viewer → dist/
 src/index.html       viewer source (data placeholder: __TWIN_DATA__)
 dist/index.html      standalone page — open directly in a browser
 dist/uoft-twin.html  same page without a document skeleton (for publishing)
+.github/workflows/   deploys dist/ to GitHub Pages on every push to main
 ```
 
 ## Rebuild
@@ -45,5 +48,7 @@ python3 -I tools/build.py src/index.html data/campus.json dist/uoft-twin.html
 Drag to pan · right-drag or two fingers to rotate · scroll or pinch to zoom ·
 `/` focuses search · `Esc` clears the selection.
 
-Map data © OpenStreetMap contributors, available under the ODbL.
+Map data © OpenStreetMap contributors, available under the
+[Open Database License](https://opendatacommons.org/licenses/odbl/). The derived
+dataset in `data/campus.json` (and embedded in `dist/`) is likewise available under the ODbL.
 Unofficial project, not affiliated with the University of Toronto.
