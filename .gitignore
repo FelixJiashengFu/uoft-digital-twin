@@ -1,0 +1,5 @@
+.DS_Store
+._*
+__pycache__/
+# raw Overpass downloads; recreate with tools/fetch_osm.sh
+data/osm/
