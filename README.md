@@ -53,7 +53,7 @@ Deno (or Node 20+).
 python3 -I tools/process.py data/osm data/campus.json
 deno run -A tools/build.mjs               # → dist/uoft-twin.html, dist/index.html
 deno install                              # playwright-core, for the checks
-deno run -A --unsafe-proto tools/qa.mjs   # 19 checks in headless Chrome; add a URL to check the live site
+deno run -A --unsafe-proto tools/qa.mjs   # 20 checks in headless Chrome; add a URL to check the live site
 ```
 
 ## Controls

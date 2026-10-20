@@ -2269,6 +2269,8 @@ canvas.addEventListener('pointermove', (e) => {
 canvas.addEventListener('pointerleave', () => { setHover(-1); tipEl.hidden = true; });
 const tipEl = $('#tip');
 controls.on('change', () => { dirty = true; });
+// building labels take pointer events (they are clickable), so pass their wheel notches to the zoom
+labelsEl.addEventListener('wheel', (e) => controls._wheel(e), { passive: false });
 
 // ------------------------------------------------------------------ layout & render loop
 
