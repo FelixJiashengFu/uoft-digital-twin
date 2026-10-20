@@ -1,0 +1,13 @@
+{
+  "name": "uoft-digital-twin",
+  "private": true,
+  "type": "module",
+  "description": "Build and browser-check tools for the U of T St. George digital twin (run with Deno or Node)",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "qa": "node tools/qa.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.49.1"
+  }
+}
